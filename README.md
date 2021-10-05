@@ -71,7 +71,8 @@ Provide a link to the source so we can see the original work and any modificatio
 - To load the csv data onto the database, run import_house_data.py script (doesn't support manage.py command)
 - To test the code locally set takehome-be/listings as the project root
 - The API end point for getting homes is your_local_host/api/homes/ 
-- The API allows for complex url queries such as api/homes/?last_sold_date__range=2017-12-18, 2017-12-20
+- You can run basic queries for all fields for each model for example: /api/homes/?price=1000000. to query for address fields, access /api/addresses/, and api/zillowdata/ for zillow data fields
+- The API allows for complex url queries such as /api/homes/?last_sold_date__range=2017-12-18, 2017-12-20
 - I implemented separate API endpoints for querying addresses and Zillow data; api/addresses/, api/zillowdata. 
 They allow the same kind of complex url queries as the home endpoint
 ## Time Spent
